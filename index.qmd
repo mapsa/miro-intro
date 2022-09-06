@@ -12,7 +12,6 @@ format:
     toc: true
     toc-depth: 1
     # transition: slide
-    # css: ["slides.css"]
 ---
 
 # Introduction
