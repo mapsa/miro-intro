@@ -1,112 +1,112 @@
 [
   {
-    "objectID": "miro-introduction.html#what-is-it",
-    "href": "miro-introduction.html#what-is-it",
+    "objectID": "index.html#what-is-it",
+    "href": "index.html#what-is-it",
     "title": "Miró for Beginners",
     "section": "What is it?",
     "text": "What is it?\n\n\n\nMiró is a data analysis software developed and maintained by our own Nick Radcliffe.\n\n\n\n\n\n\n\nIt has been written in Python and supports command line expressions and lisp-like functions."
   },
   {
-    "objectID": "miro-introduction.html#the-artists",
-    "href": "miro-introduction.html#the-artists",
+    "objectID": "index.html#the-artists",
+    "href": "index.html#the-artists",
     "title": "Miró for Beginners",
     "section": "The Artists",
     "text": "The Artists\nMiró is part of The Artists Software Suite:\n\nMiró: data analysis (extraction, manipulation, exploration, reporting, prediction and test-driven data analysis (TDDA))\nKlee: visualization\nRothko: optimization services\nGiacometti: infrastructure\nSalvador: web interface"
   },
   {
-    "objectID": "miro-introduction.html#why-miró",
-    "href": "miro-introduction.html#why-miró",
+    "objectID": "index.html#why-miró",
+    "href": "index.html#why-miró",
     "title": "Miró for Beginners",
     "section": "Why Miró?",
     "text": "Why Miró?\n\nColumn-Oriented Storage: is optimized for column operations (statistics, derived fields and xtabs), whereas row operations can be quite slow\nTDDA: used for data profiling (automatic constraint generation and verification)\nAudit trail: keep track of changes on how a dataset was derived\nSDF approved: Information Governance trusts Miró implementation to manage data on the SH"
   },
   {
-    "objectID": "miro-introduction.html#installation",
-    "href": "miro-introduction.html#installation",
+    "objectID": "index.html#installation",
+    "href": "index.html#installation",
     "title": "Miró for Beginners",
     "section": "Installation",
     "text": "Installation\n\nLocal installation requires a valid license. It is maintained in the GitHub repo stochasticsolutions/artists.\nIn the Safe Haven, we all use symbolic links to Nick’s local installation, more details here.\n\n\nAll your Miró datasets will be stored here:\nmiro -c config repository\nEvery session will have a log file you can recover from here:\nmiro -c config baselogdir"
   },
   {
-    "objectID": "miro-introduction.html#where-to-find-answers",
-    "href": "miro-introduction.html#where-to-find-answers",
+    "objectID": "index.html#where-to-find-answers",
+    "href": "index.html#where-to-find-answers",
     "title": "Miró for Beginners",
     "section": "Where to find answers?",
     "text": "Where to find answers?\n\nOfficial documentation is available in the folder repo artists\nThe Miró faqs chat on Teams\nThis wiki\nTyping:\n\nhelp\nman COMMAND\nlisp FUNCTION"
   },
   {
-    "objectID": "miro-introduction.html#variables",
-    "href": "miro-introduction.html#variables",
+    "objectID": "index.html#variables",
+    "href": "index.html#variables",
     "title": "Miró for Beginners",
     "section": "Variables",
     "text": "Variables\nA new user variable is created using setq or its quiet form setv:\nsetq a 1\nsetv b 2\nsetq followed only by a variable prints its value:\nsetq a\nGlobal variables are defined using global:\nglobal a 1"
   },
   {
-    "objectID": "miro-introduction.html#data-types",
-    "href": "miro-introduction.html#data-types",
+    "objectID": "index.html#data-types",
+    "href": "index.html#data-types",
     "title": "Miró for Beginners",
     "section": "Data types",
     "text": "Data types\n\n\n\nType\nExample\n\n\n\n\nint\n3\n\n\nreal\n5.6\n\n\nbool\nt, f\n\n\nstring\n“hello”\n\n\nfield\nfld\n\n\ndate\n2022-09-10\n\n\nlist\n(list 1 2 3)\n\n\na-list\n(a-list (list 1 “uno”) (list 2 “dos”) (list 3 “tres”))\n\n\ndataset\ndataset 2"
   },
   {
-    "objectID": "miro-introduction.html#datasets",
-    "href": "miro-introduction.html#datasets",
+    "objectID": "index.html#datasets",
+    "href": "index.html#datasets",
     "title": "Miró for Beginners",
     "section": "Datasets",
     "text": "Datasets\nDatasets are the most important data type in Miró.\n\n\n\nCommand\nDescription\nLong form\n\n\n\n\nload filename\nLoad a Miró file/dataset\n\n\n\nunload dataset\nLoad a Miró dataset\n\n\n\nopen filename\nLoad a Miró dataset\n\n\n\nsave filename\nSave a Miró dataset\n\n\n\npwd\nPrint working dataset\n\n\n\ncwd\nCurrent working dataset\n\n\n\nls -l\nList fields and their metadata\n\n\n\nlsd\nlist datasets in your repository\n\n\n\nshow N\nShow first N rows of the working dataset\n\n\n\ntail N\nShow last N rows of the working dataset\n\n\n\nsample\nShow random records\n\n\n\ndata\nswitch cwd or creates a new dataset\ndataset"
   },
   {
-    "objectID": "miro-introduction.html#datasets-operations",
-    "href": "miro-introduction.html#datasets-operations",
+    "objectID": "index.html#datasets-operations",
+    "href": "index.html#datasets-operations",
     "title": "Miró for Beginners",
     "section": "Datasets Operations",
     "text": "Datasets Operations\n\n\n\nCommand\nDescription\nLong form\n\n\n\n\ndef field\nCreates a new field\ndefine\n\n\nmv\nRenames a field\n\n\n\nrm\nRemoves a field\n\n\n\ncount\nPrints number of rows\n\n\n\nbin\nField binning\n\n\n\nx\nCrosstabs and visualizations\nxtab"
   },
   {
-    "objectID": "miro-introduction.html#lisp-like-operations",
-    "href": "miro-introduction.html#lisp-like-operations",
+    "objectID": "index.html#lisp-like-operations",
+    "href": "index.html#lisp-like-operations",
     "title": "Miró for Beginners",
     "section": "Lisp-like operations",
     "text": "Lisp-like operations\nMiró uses lisp-like expressions to perform vector operations on datasets fields. Lisp is the second oldest programming language after Fortran. It has a parenthesized prefix notation, for example this is how you add up two numbers:\n(+ 1 2)\nsimilarly, this is how you add up two columns in Miró:\nload ddd\ndef newcol (+ odds even)"
   },
   {
-    "objectID": "miro-introduction.html#functions",
-    "href": "miro-introduction.html#functions",
+    "objectID": "index.html#functions",
+    "href": "index.html#functions",
     "title": "Miró for Beginners",
     "section": "Functions",
     "text": "Functions\nIn Miró there are two function types:\n1) Command\ncmd my-function string var\n    echo Hello $var\ndmc\nthen use it as:\nmy-function World\n2) Lisp-like function\n(defun myfunction (d) (+ \"Hello \" d))\nthen use it as:\n(myfunction \"World\")"
   },
   {
-    "objectID": "miro-introduction.html#loops",
-    "href": "miro-introduction.html#loops",
+    "objectID": "index.html#loops",
+    "href": "index.html#loops",
     "title": "Miró for Beginners",
     "section": "Loops",
     "text": "Loops\n(loop (cli \"echo\" \"Hello\" x)\n           (x (list \"World\" \n                    \"Sailor\" \n                    \"Hello\")))"
   },
   {
-    "objectID": "miro-introduction.html#writing-scripts",
-    "href": "miro-introduction.html#writing-scripts",
+    "objectID": "index.html#writing-scripts",
+    "href": "index.html#writing-scripts",
     "title": "Miró for Beginners",
     "section": "Writing Scripts",
     "text": "Writing Scripts\nLet’s write a script called myscript.miros\nsetq first (. $* 1)\nsetq second (. $* 2)\n\n(fail-if (not (= (length $*) 3))\n          \"USAGE: miro -f myscript VAR VAR \")\n\n(+ first second)"
   },
   {
-    "objectID": "miro-introduction.html#how-to-run-code",
-    "href": "miro-introduction.html#how-to-run-code",
+    "objectID": "index.html#how-to-run-code",
+    "href": "index.html#how-to-run-code",
     "title": "Miró for Beginners",
     "section": "How to run code",
     "text": "How to run code\n\nExecuting code running Miró from the terminal typing miro.\nStarting the Salvador daemon running mirod\nWriting a script (extension .miros) and running it on the terminal:\n\nmiro -f myscript\nor from Salvador\n. -f myscript Hello World"
   },
   {
-    "objectID": "miro-introduction.html#exercise",
-    "href": "miro-introduction.html#exercise",
+    "objectID": "index.html#exercise",
+    "href": "index.html#exercise",
     "title": "Miró for Beginners",
     "section": "Exercise",
     "text": "Exercise\n\nLoad a dataset (ddd or hillstrom)\nCheck its metadata\nCreate some calculated fields\nFilter some rows\nSave the new dataset as a miro dataset and csv"
   },
   {
-    "objectID": "miro-introduction.html#future-sessions-topics",
-    "href": "miro-introduction.html#future-sessions-topics",
+    "objectID": "index.html#future-sessions-topics",
+    "href": "index.html#future-sessions-topics",
     "title": "Miró for Beginners",
     "section": "Future sessions topics",
     "text": "Future sessions topics\n\nCrosstabs\nVisualizations\nMetadata\nTDDA\nReporting"
