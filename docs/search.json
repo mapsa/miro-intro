@@ -4,7 +4,7 @@
     "href": "index.html#what-is-it",
     "title": "Miró for Beginners",
     "section": "What is it?",
-    "text": "What is it?\n\n\n\nMiró is a data analysis software developed and maintained by our own Nick Radcliffe.\n\n\n\n\n\n\n\nIt has been written in Python and supports command line expressions and lisp-like functions."
+    "text": "What is it?\n\n\n\nMiró is a data analysis software developed and maintained by our own Nick Radcliffe.\n\n\n\n\n\n\n\nIt has been written in Python and supports command line expressions and (lisp-like) functions."
   },
   {
     "objectID": "index.html#the-artists",
@@ -49,25 +49,32 @@
     "text": "Data types\n\n\n\nType\nExample\n\n\n\n\nint\n3\n\n\nreal\n5.6\n\n\nbool\nt, f\n\n\nstring\n“hello”\n\n\nfield\nfld\n\n\ndate\n2022-09-10\n\n\nlist\n(list 1 2 3)\n\n\na-list\n(a-list (list 1 “uno”) (list 2 “dos”) (list 3 “tres”))\n\n\ndataset\ndataset 2"
   },
   {
-    "objectID": "index.html#datasets",
-    "href": "index.html#datasets",
+    "objectID": "index.html#datasets-12",
+    "href": "index.html#datasets-12",
     "title": "Miró for Beginners",
-    "section": "Datasets",
-    "text": "Datasets\nDatasets are the most important data type in Miró.\n\n\n\nCommand\nDescription\nLong form\n\n\n\n\nload filename\nLoad a Miró file/dataset\n\n\n\nunload dataset\nLoad a Miró dataset\n\n\n\nopen filename\nLoad a Miró dataset\n\n\n\nsave filename\nSave a Miró dataset\n\n\n\npwd\nPrint working dataset\n\n\n\ncwd\nCurrent working dataset\n\n\n\nls -l\nList fields and their metadata\n\n\n\nlsd\nlist datasets in your repository\n\n\n\nshow N\nShow first N rows of the working dataset\n\n\n\ntail N\nShow last N rows of the working dataset\n\n\n\nsample\nShow random records\n\n\n\ndata\nswitch cwd or creates a new dataset\ndataset"
+    "section": "Datasets (1/2)",
+    "text": "Datasets (1/2)\nDatasets are the most important data type in Miró.\n\n\n\n\n\n\n\n\nCommand\nDescription\nLong form\n\n\n\n\nload filename\nLoad a Miró file/dataset\n\n\n\nunload dataset\nLoad a Miró dataset\n\n\n\nopen filename\nLoad metadata for dataset with data loaded lazily\n\n\n\nsave filename\nSave a Miró dataset\n\n\n\npwd\nPrint working dataset\n\n\n\ncwd\nCurrent working dataset\n\n\n\nls -l\nList fields and their metadata\n\n\n\nlsd\nlist datasets in your repository"
+  },
+  {
+    "objectID": "index.html#datasets-22",
+    "href": "index.html#datasets-22",
+    "title": "Miró for Beginners",
+    "section": "Datasets (2/2)",
+    "text": "Datasets (2/2)\n\n\n\nCommand\nDescription\nLong form\n\n\n\n\nshow N\nShow first N rows of the working dataset\n\n\n\ntail N\nShow last N rows of the working dataset\n\n\n\nsample N\nShow N random records\n\n\n\ndata\nswitch cwd or creates a new dataset\ndataset"
   },
   {
     "objectID": "index.html#datasets-operations",
     "href": "index.html#datasets-operations",
     "title": "Miró for Beginners",
     "section": "Datasets Operations",
-    "text": "Datasets Operations\n\n\n\nCommand\nDescription\nLong form\n\n\n\n\ndef field\nCreates a new field\ndefine\n\n\nmv\nRenames a field\n\n\n\nrm\nRemoves a field\n\n\n\ncount\nPrints number of rows\n\n\n\nbin\nField binning\n\n\n\nx\nCrosstabs and visualizations\nxtab"
+    "text": "Datasets Operations\n\n\n\nCommand\nDescription\nLong form\n\n\n\n\ndef field\nCreates a new field\ndefine\n\n\nmv\nRenames a field\n\n\n\nrm\nRemoves a field\n\n\n\ncount\nCounts the number of selected rows\n\n\n\nbin\nBins a field\n\n\n\nx\nCrosstabs and visualizations\nxtab"
   },
   {
     "objectID": "index.html#lisp-like-operations",
     "href": "index.html#lisp-like-operations",
     "title": "Miró for Beginners",
-    "section": "Lisp-like operations",
-    "text": "Lisp-like operations\nMiró uses lisp-like expressions to perform vector operations on datasets fields. Lisp is the second oldest programming language after Fortran. It has a parenthesized prefix notation, for example this is how you add up two numbers:\n(+ 1 2)\nsimilarly, this is how you add up two columns in Miró:\nload ddd\ndef newcol (+ odds even)"
+    "section": "(lisp-like) operations",
+    "text": "(lisp-like) operations\nMiró uses (lisp-like) expressions to perform vector operations on datasets fields. Lisp is the second oldest programming language after Fortran. It has a parenthesized prefix notation, for example this is how you add up two numbers:\n(+ 1 2)\nsimilarly, this is how you add up two columns in Miró:\nload ddd\ndef newcol (+ odds even)"
   },
   {
     "objectID": "index.html#functions",

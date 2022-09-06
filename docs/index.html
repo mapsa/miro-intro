@@ -411,12 +411,12 @@
 <p><a href="https://stochasticsolutions.com/miro/">Miró</a> is a data analysis software developed and maintained by our own Nick Radcliffe.</p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: center;">
-<p><img data-src="img/MiroLogoNoBackground600x300.png"></p>
+<p><img data-src="img/Miro-logo.png"></p>
 </div>
 </div>
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
-<p>It has been written in Python and supports command line expressions and lisp-like functions.</p>
+<p>It has been written in Python and supports command line expressions and (lisp-like) functions.</p>
 </div>
 </div>
 </div>
@@ -542,10 +542,15 @@
 </table>
 <!-- ------------------ Slide ------------------------ -->
 </section>
-<section id="datasets" class="slide level2 smaller">
-<h2>Datasets</h2>
+<section id="datasets-12" class="slide level2 smaller">
+<h2>Datasets (1/2)</h2>
 <p>Datasets are the most important data type in Miró.</p>
 <table>
+<colgroup>
+<col style="width: 36%">
+<col style="width: 57%">
+<col style="width: 5%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Command</th>
@@ -566,7 +571,7 @@
 </tr>
 <tr class="odd">
 <td><strong>open</strong> filename</td>
-<td>Load a Miró dataset</td>
+<td>Load metadata for dataset with data loaded lazily</td>
 <td></td>
 </tr>
 <tr class="even">
@@ -585,7 +590,7 @@
 <td></td>
 </tr>
 <tr class="odd">
-<td><strong>ls</strong> -l</td>
+<td><strong>ls -l</strong></td>
 <td>List fields and their metadata</td>
 <td></td>
 </tr>
@@ -594,6 +599,20 @@
 <td>list datasets in your repository</td>
 <td></td>
 </tr>
+</tbody>
+</table>
+</section>
+<section id="datasets-22" class="slide level2 smaller">
+<h2>Datasets (2/2)</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Command</th>
+<th>Description</th>
+<th>Long form</th>
+</tr>
+</thead>
+<tbody>
 <tr class="odd">
 <td><strong>show</strong> N</td>
 <td>Show first N rows of the working dataset</td>
@@ -605,8 +624,8 @@
 <td></td>
 </tr>
 <tr class="odd">
-<td><strong>sample</strong></td>
-<td>Show random records</td>
+<td><strong>sample</strong> N</td>
+<td>Show N random records</td>
 <td></td>
 </tr>
 <tr class="even">
@@ -645,12 +664,12 @@
 </tr>
 <tr class="even">
 <td><strong>count</strong></td>
-<td>Prints number of rows</td>
+<td>Counts the number of selected rows</td>
 <td></td>
 </tr>
 <tr class="odd">
 <td><strong>bin</strong></td>
-<td>Field binning</td>
+<td>Bins a field</td>
 <td></td>
 </tr>
 <tr class="even">
@@ -662,8 +681,8 @@
 </table>
 </section>
 <section id="lisp-like-operations" class="slide level2">
-<h2>Lisp-like operations</h2>
-<p><strong>Miró</strong> uses <strong>lisp-like</strong> expressions to perform vector operations on datasets fields. Lisp is the second oldest programming language after Fortran. It has a parenthesized prefix notation, for example this is how you add up two numbers:</p>
+<h2>(lisp-like) operations</h2>
+<p><strong>Miró</strong> uses <strong>(lisp-like)</strong> expressions to perform vector operations on datasets fields. Lisp is the second oldest programming language after Fortran. It has a parenthesized prefix notation, for example this is how you add up two numbers:</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode numberSource lisp number-lines code-with-copy"><code class="sourceCode commonlisp"><span id="cb6-1"><a href="#cb6-1"></a>(<span class="op">+</span> <span class="dv">1</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>similarly, this is how you add up two columns in Miró:</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode numberSource lisp number-lines code-with-copy"><code class="sourceCode commonlisp"><span id="cb7-1"><a href="#cb7-1"></a><span class="kw">load</span> ddd</span>

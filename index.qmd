@@ -23,9 +23,9 @@ format:
 ::: {layout="[[60, 40], [100]]"}
 [Miró](https://stochasticsolutions.com/miro/) is a data analysis software developed and maintained by our own Nick Radcliffe.
 
-![](img/MiroLogoNoBackground600x300.png)
+![](img/Miro-logo.png)
 
-It has been written in Python and supports command line expressions and lisp-like functions.
+It has been written in Python and supports command line expressions and (lisp-like) functions.
 :::
 
 
@@ -118,7 +118,7 @@ global a 1
 
 
 <!-- ------------------ Slide ------------------------ -->
-## Datasets {.smaller}
+## Datasets (1/2){.smaller}
 
 Datasets are the most important data type in Miró. 
 
@@ -126,15 +126,20 @@ Datasets are the most important data type in Miró.
 | ------- | ----------- | - |
 | **load** filename | Load a Miró file/dataset |
 | **unload** dataset | Load a Miró dataset |
-| **open** filename   | Load a Miró dataset |
+| **open** filename   | Load metadata for dataset with data loaded lazily |
 | **save** filename   | Save a Miró dataset |
 | **pwd**     | Print working dataset |
 | **cwd**     | Current working dataset |
-| **ls** -l   | List fields and their metadata |
+| **ls -l**   | List fields and their metadata |
 | **lsd**     | list datasets in your repository|
+
+## Datasets (2/2){.smaller}
+
+| Command | Description | Long form |
+| ------- | ----------- | - |
 | **show** N | Show first N rows of the working dataset |
 | **tail** N | Show last N rows of the working dataset |
-| **sample** | Show random records|
+| **sample** N | Show N random records|
 | **data** | switch cwd or creates a new dataset| **dataset** |
 
 ## Datasets Operations
@@ -144,13 +149,13 @@ Datasets are the most important data type in Miró.
 | **def** field | Creates a new field| **define** |
 | **mv** | Renames a field |
 | **rm** | Removes a field |
-| **count**| Prints number of rows|
-| **bin** | Field binning|
+| **count**| Counts the number of selected rows|
+| **bin** | Bins a field|
 | **x**| Crosstabs and visualizations | **xtab** |
 
-## Lisp-like operations
+## (lisp-like) operations
 
-**Miró** uses **lisp-like** expressions to perform vector operations on datasets fields. Lisp is the second oldest programming language after Fortran. It has a parenthesized prefix notation, for example this is how you add up two numbers:
+**Miró** uses **(lisp-like)** expressions to perform vector operations on datasets fields. Lisp is the second oldest programming language after Fortran. It has a parenthesized prefix notation, for example this is how you add up two numbers:
 
 ```{.lisp}
 (+ 1 2)
